@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Customer.AddABookingController">
+   <children>
+      <Text layoutX="209.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a Booking">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+      <Text layoutX="14.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick Performance:" />
+      <TextField fx:id="name" layoutX="60.0" layoutY="47.0" />
+      <Text layoutX="14.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick Time:" />
+      <Button fx:id="addBooking" layoutX="484.0" layoutY="351.0" mnemonicParsing="false" onAction="#addABooking" text="Add a Booking" />
+      <Text layoutX="425.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Price = " />
+      <ComboBox fx:id="pickPerf" layoutX="121.0" layoutY="92.0" onAction="#pickPerfPrice" prefWidth="150.0" />
+      <ComboBox fx:id="pickTime" layoutX="74.0" layoutY="142.0" prefWidth="150.0" />
+      <Text fx:id="totalPrice" layoutX="505.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="52.82812714576721" />
+      <Text layoutX="336.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking ID = " />
+      <Text fx:id="bookingID" layoutX="425.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Button fx:id="map" layoutX="550.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToMap" text="Map" />
+      <Text layoutX="14.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Seats:" />
+      <Text layoutX="14.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="19.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stall:" />
+      <Text layoutX="15.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Circle:" />
+      <Text layoutX="9.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balcony:" />
+      <TextField fx:id="stall" layoutX="61.0" layoutY="208.0" onAction="#numberOfStalls" prefHeight="16.0" prefWidth="34.0" />
+      <TextField fx:id="circle" layoutX="60.0" layoutY="244.0" onAction="#numberOfCircles" prefHeight="16.0" prefWidth="34.0" />
+      <TextField fx:id="balcony" layoutX="60.0" layoutY="282.0" onAction="#numberOfBalconys" prefHeight="16.0" prefWidth="34.0" />
+      <Text fx:id="stallPrice" layoutX="108.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+      <Text fx:id="circlePrice" layoutX="108.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+      <Text fx:id="balconyPrice" layoutX="108.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+      <Button fx:id="returnButton" layoutX="14.0" layoutY="364.0" mnemonicParsing="false" onAction="#goBack" text="Return" />
+   </children>
+</Pane>

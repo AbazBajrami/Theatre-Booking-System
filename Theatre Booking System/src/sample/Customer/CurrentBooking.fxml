@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Customer.CurrentBoookingController">
+   <children>
+      <TableView fx:id="tableView" layoutX="34.0" layoutY="90.0" prefHeight="120.0" prefWidth="551.0">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="performanceTitle" prefWidth="124.0" text="Performance" />
+            <TableColumn fx:id="time" prefWidth="73.0" text="Time" />
+            <TableColumn fx:id="numberOfSeats" prefWidth="111.0" text="Number of Seats" />
+            <TableColumn fx:id="price" minWidth="5.0" prefWidth="50.0" text="Price" />
+            <TableColumn fx:id="bookingId" minWidth="5.0" prefWidth="117.0" text="Booking ID" />
+         </columns>
+      </TableView>
+      <Button fx:id="newBookingButton" layoutX="474.0" layoutY="362.0" mnemonicParsing="false" onAction="#goToNewBooking" text="Add New Booking" />
+      <Text layoutX="34.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Bookings" wrappingWidth="91.74609375" />
+      <Button fx:id="map" layoutX="545.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToMap" text="Map" />
+      <Button fx:id="returnButton" layoutX="14.0" layoutY="362.0" mnemonicParsing="false" onAction="#goBack" text="Return" />
+      <TextField fx:id="bookingToDelete" layoutX="34.0" layoutY="245.0" />
+      <Button fx:id="deleteBooking" layoutX="204.0" layoutY="245.0" mnemonicParsing="false" onAction="#deleteTheBooking" text="Delete The Booking" />
+      <Text layoutX="62.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Put in Bookin ID" wrappingWidth="91.74609375" />
+   </children>
+</Pane>

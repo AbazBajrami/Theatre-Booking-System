@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewAllController">
+   <children>
+      <TableView fx:id="tableViewBooking" layoutY="298.0" prefHeight="102.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="bookingTitle" prefWidth="124.0" text="Performance" />
+            <TableColumn fx:id="bookingTime" prefWidth="73.0" text="Time" />
+            <TableColumn fx:id="numberOfSeats" prefWidth="123.0" text="Number of Seats" />
+            <TableColumn fx:id="price" minWidth="5.0" prefWidth="100.0" text="Price" />
+            <TableColumn fx:id="bookingID" minWidth="5.0" prefWidth="110.0" text="Booking ID" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tableViewPerformance" layoutY="166.0" prefHeight="102.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="dateColumn" prefWidth="168.0" text="Date" />
+            <TableColumn fx:id="titlePerfColumn" prefWidth="221.0" text="Title" />
+            <TableColumn fx:id="timeColumn" prefWidth="216.0" text="Times" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tableView" layoutY="36.0" prefHeight="102.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="titleColumn" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="runningTimeColumn" prefWidth="124.0" text="Running Time(mins)" />
+            <TableColumn fx:id="startDate" prefWidth="89.0" text="Start Date" />
+            <TableColumn fx:id="endDate" prefWidth="97.0" text="End Date" />
+            <TableColumn fx:id="stallPrice" text="Stalls" />
+            <TableColumn fx:id="circlePrice" prefWidth="75.0" text="Circle" />
+            <TableColumn fx:id="balconyPrice" prefWidth="59.0" text="Balcony" />
+         </columns>
+      </TableView>
+      <Text layoutX="32.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHOWS" />
+      <Text layoutX="29.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERFORMANCES" />
+      <Text layoutX="32.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BOOKINGS" />
+      <Button fx:id="map" layoutX="550.0" layoutY="5.0" mnemonicParsing="false" onAction="#goToMap" text="Map" />
+   </children>
+</Pane>
